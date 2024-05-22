@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7446406380052203350
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7446406380052203348}
+  - component: {fileID: 7446406380052203349}
+  - component: {fileID: 7446406380052203347}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7446406380052203348
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7446406380052203350}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.7568772, y: -0.7720095, z: -3.6002927}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7446406380052203349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7446406380052203350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d59f752531a19534896ef17f19154496, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  AsteroidPrefab: {fileID: 1409174572, guid: 88353dcfb79e96d41b9f771efe8a3de9, type: 3}
+  AsteroidsOnSceneLoad: 3
+  AsteroidSpawnDistanceSceneLoad:
+    Min: 5
+    Max: 10
+  AsteroidSpawnMassMultiplierOfPlayerOnSceneLoad:
+    Min: 0.6
+    Max: 0.7
+  AsteroidSpawnDistance:
+    Min: 20
+    Max: 25
+  AsteroidSpawnMassMultiplierOfPlayer_Smaller:
+    Min: 0.25
+    Max: 0.79
+  AsteroidSpawnMassMultiplierOfPlayer_Bigger:
+    Min: 0.8
+    Max: 15
+  ChanceOfAsteroidBeingBiggerThanPlayer: 10.5
+  MaxAsteroids: 50
+  MaxDistFromPlayerMultiplierOfScale: 25
+  Spawnrate: 0.024
+--- !u!114 &7446406380052203347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7446406380052203350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ff553f0f828d6a468fadca04e9a9385, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerObj: {fileID: 0}
+  StageOfPlay: 1
